@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddGamePage</class>
+ <widget class="QWidget" name="AddGamePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>671</width>
+    <height>591</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLineEdit" name="gameName">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>390</y>
+     <width>200</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="saveGameBtn">
+   <property name="geometry">
+    <rect>
+     <x>544</x>
+     <y>490</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存对局</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>15</y>
+     <width>611</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="line0">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>玩家</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>评分</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>输/赢</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>是否辅助位</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="line1">
+      <item>
+       <widget class="QComboBox" name="player_1"/>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="score_1"/>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isWin_1">
+        <property name="text">
+         <string>Win</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isSup_1">
+        <property name="text">
+         <string>Sup</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="line2">
+      <item>
+       <widget class="QComboBox" name="player_2"/>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="score_2"/>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isWin_2">
+        <property name="text">
+         <string>Win</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isSup_2">
+        <property name="text">
+         <string>Sup</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="line3">
+      <item>
+       <widget class="QComboBox" name="player_3"/>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="score_3"/>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isWin_3">
+        <property name="text">
+         <string>Win</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isSup_3">
+        <property name="text">
+         <string>Sup</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="line4">
+      <item>
+       <widget class="QComboBox" name="player_4"/>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="score_4"/>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isWin_4">
+        <property name="text">
+         <string>Win</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isSup_4">
+        <property name="text">
+         <string>Sup</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="line5">
+      <item>
+       <widget class="QComboBox" name="player_5"/>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="score_5"/>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isWin_5">
+        <property name="text">
+         <string>Win</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isSup_5">
+        <property name="text">
+         <string>Sup</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="line6">
+      <item>
+       <widget class="QComboBox" name="player_6"/>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="score_6"/>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isWin_6">
+        <property name="text">
+         <string>Win</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isSup_6">
+        <property name="text">
+         <string>Sup</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="line7">
+      <item>
+       <widget class="QComboBox" name="player_7"/>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="score_7"/>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isWin_7">
+        <property name="text">
+         <string>Win</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isSup_7">
+        <property name="text">
+         <string>Sup</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="line8">
+      <item>
+       <widget class="QComboBox" name="player_8"/>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="score_8"/>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isWin_8">
+        <property name="text">
+         <string>Win</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isSup_8">
+        <property name="text">
+         <string>Sup</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="line9">
+      <item>
+       <widget class="QComboBox" name="player_9"/>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="score_9"/>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isWin_9">
+        <property name="text">
+         <string>Win</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isSup_9">
+        <property name="text">
+         <string>Sup</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="line10">
+      <item>
+       <widget class="QComboBox" name="player_10"/>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="score_10"/>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isWin_10">
+        <property name="text">
+         <string>Win</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="isSup_10">
+        <property name="text">
+         <string>Sup</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="gameLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>390</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>对局名称:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="gameLabel_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>430</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>对局时间:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="gameTime">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>430</y>
+     <width>200</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>460</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>格式：yyyy/mm/dd hh:mm</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
