@@ -56,10 +56,10 @@ void RankPage::initRankPage()
     QTableWidgetItem *item1 = new QTableWidgetItem;
     QTableWidgetItem *item2 = new QTableWidgetItem;
     QTableWidgetItem *item3 = new QTableWidgetItem;
-    item0->setText("排名");
-    item1->setText("选手");
-    item2->setText("场均");
-    item3->setText("胜率");
+    item0->setText(QString::fromUtf8("排名"));
+    item1->setText(QString::fromUtf8("选手"));
+    item2->setText(QString::fromUtf8("场均"));
+    item3->setText(QString::fromUtf8("胜率"));
     ui->rankList->setHorizontalHeaderItem(0,item0);
     ui->rankList->setHorizontalHeaderItem(1,item1);
     ui->rankList->setHorizontalHeaderItem(2,item2);
@@ -101,6 +101,7 @@ void RankPage::insertDataToRankList(QList<Player> list)
         scoreData->setText(QString::number(socre, 'f', 2));
 
         double winPerc = newList[i].getWinningProbability();
+        qDebug()<<"winPerc:"<<winPerc;
         winData->setText(QString::number(winPerc * 100, 'f', 2) + "%");
         rankData->setTextAlignment(Qt::AlignCenter);
         nameData->setTextAlignment(Qt::AlignCenter);

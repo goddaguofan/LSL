@@ -1,4 +1,5 @@
 #include "player.h"
+#include <QDebug>
 
 Player::Player(QString name)
 {
@@ -17,5 +18,5 @@ void Player::addGameData(GameData gameData)
         if(game.isWin) winGames++;
     }
     averageScore = totalScore/gameList.size();
-    winningProbability = winGames/gameList.size();
+    winningProbability = static_cast<double>(winGames)/static_cast<double>(gameList.size());
 }

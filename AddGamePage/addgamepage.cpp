@@ -37,11 +37,11 @@ void AddGamePage::on_gameTime_returnPressed()
 void AddGamePage::on_saveGameBtn_clicked()
 {
     if(ui->gameName->text().isEmpty()){
-        QMessageBox::critical(nullptr, "Error", "对局名称为空!");
+        QMessageBox::critical(nullptr, "Error", QString::fromUtf8("对局名称为空!"));
         return;
     }
     if(ui->gameTime->text().isEmpty()){
-        QMessageBox::critical(nullptr, "Error", "对局时间为空!");
+        QMessageBox::critical(nullptr, "Error", QString::fromUtf8("对局时间为空!"));
         return;
     }
     if(!checkData()){
@@ -49,7 +49,7 @@ void AddGamePage::on_saveGameBtn_clicked()
     }
     //添加对局数据
     addGameData();
-    QMessageBox::information(nullptr, "Yes", "对局已添加!");
+    QMessageBox::information(nullptr, "Yes", QString::fromUtf8("对局已添加!"));
 }
 
 bool AddGamePage::checkData()
@@ -58,13 +58,13 @@ bool AddGamePage::checkData()
     for(int i=1;i<=10;i++){
         QString player = this->findChild<QComboBox *>("player_"+QString::number(i))->currentText();
         if(player.isEmpty()){
-            QMessageBox::critical(nullptr, "Error", "玩家为空!");
+            QMessageBox::critical(nullptr, "Error", QString::fromUtf8("玩家为空!"));
             return false;
         }
         if (!list.contains(player)) {
             list.append(player);
         }else{
-            QMessageBox::critical(nullptr, "Error", "玩家重复!");
+            QMessageBox::critical(nullptr, "Error", QString::fromUtf8("玩家重复!"));
             return false;
         }
     }

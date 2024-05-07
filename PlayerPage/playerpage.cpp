@@ -25,9 +25,9 @@ void PlayerPage::on_addNewPlayerBtn_clicked()
 {
     bool addOk = playerManager.addNewPlayer(ui->newPlayer->text());
     if(addOk){
-        QMessageBox::information(nullptr, "Yes", "玩家已添加!");
+        QMessageBox::information(nullptr, "Yes", QString::fromUtf8("玩家已添加!"));
     }else{
-         QMessageBox::critical(nullptr, "Error", "玩家已存在!");
+         QMessageBox::critical(nullptr, "Error", QString::fromUtf8("玩家已存在!"));
     }
 
 }
@@ -36,9 +36,9 @@ void PlayerPage::on_newPlayer_returnPressed()
 {
     bool addOk = playerManager.addNewPlayer(ui->newPlayer->text());
     if(addOk){
-        QMessageBox::information(nullptr, "Yes", "玩家已添加!");
+        QMessageBox::information(nullptr, "Yes", QString::fromUtf8("玩家已添加!"));
     }else{
-         QMessageBox::critical(nullptr, "Error", "玩家已存在!");
+         QMessageBox::critical(nullptr, "Error", QString::fromUtf8("玩家已存在!"));
     }
 }
 
